@@ -22,11 +22,7 @@
 
                 document.addEventListener('copy', preventInspect, true);
 
-                setInterval(function() {
-                    debugger ;if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
-                        document.body.innerHTML = 'DevTools detected!';
-                    }
-                }, 100);
+            
 
                 const consoleProperties = ['log', 'debug', 'info', 'warn', 'error', 'dir', 'dirxml', 'trace', 'group', 'groupCollapsed', 'groupEnd', 'clear', 'count', 'countReset', 'assert', 'profile', 'profileEnd', 'time', 'timeLog', 'timeEnd', 'table', 'memory'];
 
